@@ -99,4 +99,4 @@ def PageNotFound(error):
 def user(username):
     return f'Username is {username}'
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, host = '0.0.0.0')
