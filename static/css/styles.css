@@ -1,0 +1,45 @@
+body{
+    background-color:#212529;
+}
+#loft{
+    padding-bottom:80px;
+}
+#hold{
+    background-color:white;
+}
+#gold{
+    padding:20px;
+}
+#gift{
+    padding-bottom:20px;
+    padding-top:-6px;
+}
+
+div.bmw_text{
+    background-color:#000000;
+    margin-top:-50px;
+}
+div.audi_text{
+    background-color:#708090;
+    margin-top:-50px;
+}
+div.mercedes_text{
+    background-color:white;
+    margin-top:-50px;
+}
+#finger{
+    background-color:#808080;
+    padding-bottom:20px;
+}
+#bug{
+    background-color:white;
+}
+.flash{
+    padding:10px;
+}
+.flash.success{
+    background: #228B22;
+}
+.flash.error{
+    background: #B22222;
+}

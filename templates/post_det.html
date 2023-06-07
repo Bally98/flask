@@ -1,0 +1,22 @@
+{% extends 'file.html' %}
+{% block title %}
+{{ article.title }}
+{% endblock %}
+{% block main %}
+
+<div class="text">
+    <section id="hold" class="container">
+        <section class="container py-4">
+            <div class="text-left m-3" >
+                <h1 id="gold" class="fw-italic text-center">{{ article.title }}</h1>
+                <h4 class="fw-normal">{{ article.intro }}</h4>
+                <h4 class="fw-normal">{{ article.text }}</h4>
+                <p><b>Date: {{ article.date.date() }}</b></p>
+                <a href="/posts/{{ article.id }}/del" class="btn btn-secondary my-2">Delete</a>
+                <a href="/posts/{{ article.id }}/update" class="btn btn-secondary my-2">Edit</a>
+            </div>
+        </section>
+    </section>
+
+</div>
+{% endblock %}

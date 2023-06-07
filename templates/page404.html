@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block tittle  %}
+Page not found
+{% endblock %}
+{% block main  %}
+{{ super() }}
+<div class ="text-center">
+    <h2 class="fw-italic " >404</h2>
+    <h5>Page not found return to <a href="{{url_for('main')}}"> main</a> page</h5>
+</div>
+{% endblock %}

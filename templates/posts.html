@@ -1,0 +1,29 @@
+{% extends 'file.html' %}
+{% block title %}
+Posts
+{% endblock %}
+{% block main %}
+<div>
+    <h1  class="fw-light text-center pb-5"><font color="white">All posts</font></h1>
+    <div class="text">
+        {% if articles|length > 0 %}
+            {% for i in articles %}
+            <section class="container">
+                <div id="bug" class="alert alert-dark" >
+                    <h2>{{ i.title }}</h2>
+                    <p>{{ i.intro }}</p>
+                    <p><b>{{ i.date.date() }}</b></p>
+                    <a href="/posts/{{ i.id }}" class="btn btn-primary my-2">More</a>
+                    <a href="/posts/{{ i.id }}/del" class="btn btn-secondary my-2">Delete</a>
+                    <a href="/posts/{{ i.id }}/update" class="btn btn-secondary my-2">Edit</a>
+                </div>
+            </section>
+            {% endfor %}
+        {% else %}
+            <div class ="text-center">
+                <h2 id='gold' class="fw-italic ">No posts yet</h2>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

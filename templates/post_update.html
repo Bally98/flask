@@ -1,0 +1,18 @@
+{% extends 'file.html' %}
+{% block tittle  %}
+Add post
+{% endblock %}
+
+{% block main  %}
+
+<div class="container mt-5">
+    <h1>Update post</h1>
+    <form method="post" >
+        <input type="text" name="title" id="title" class="form-control" value="{{ article.title }}" placeholder="Name"><br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Announcement">{{ article.intro }}</textarea><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Content">{{ article.text }}</textarea><br>
+        <input type="submit" class="btn btn-success" value="Update">
+    </form>
+</div>
+
+{% endblock %}
